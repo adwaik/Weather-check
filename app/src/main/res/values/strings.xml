@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather Check</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_change_city">Change city</string>
+
+
+    <string name="temperature">Temperature</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+
+
+</resources>

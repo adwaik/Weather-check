@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="generic_margin">24dp</dimen>
+    <dimen name="generic_padding">8dp</dimen>
+    <dimen name="auto_size">0dp</dimen>
+    <dimen name="map_percentage">0.4</dimen>
+</resources>

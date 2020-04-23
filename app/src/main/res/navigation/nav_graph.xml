@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/detailsFragment">
+
+    <fragment android:id="@+id/detailsFragment"
+              android:name="com.dwaik.weathercheck.view.DetailsFragment"
+              android:label="DetailsFragment"
+              tools:layout="@layout/frag_details">
+        <action android:id="@+id/action_selection"
+                app:destination="@id/selectionFragment"
+                app:enterAnim="@anim/in"
+                app:exitAnim="@anim/out"
+                app:popEnterAnim="@anim/pop_in"
+                app:popExitAnim="@anim/pop_out"/>
+    </fragment>
+
+    <fragment android:id="@+id/selectionFragment"
+              android:name="com.dwaik.weathercheck.view.SelectionFragment"
+              android:label="SelectionFragment"
+              tools:layout="@layout/frag_selection">
+        <action android:id="@+id/action_details"
+                app:destination="@id/detailsFragment"
+                app:launchSingleTop="true"
+                app:popUpToInclusive="true"
+                app:popUpTo="@id/selectionFragment"
+                app:enterAnim="@anim/in"
+                app:exitAnim="@anim/out"
+                app:popEnterAnim="@anim/pop_in"
+                app:popExitAnim="@anim/pop_out"/>
+    </fragment>
+
+</navigation>
